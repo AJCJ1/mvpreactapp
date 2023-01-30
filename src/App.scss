@@ -1,0 +1,19 @@
+.grey-backer-right {
+  img {
+    width: 20%;
+  }
+}
+.lightbox {
+  img {
+    width: 20%;
+    object-fit: cover;
+    object-position: center;
+    height: 25vh;
+  }
+}
+.side-image {
+  width: 50vw;
+  height: 50vw;
+  object-fit: cover;
+  object-position: center;
+}

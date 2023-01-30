@@ -3,6 +3,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 // router
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+// import scss
+import './App.scss'
+
 // components
 import Footer from "./components/Footer"
 import Home from "./Home"

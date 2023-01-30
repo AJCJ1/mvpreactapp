@@ -2,13 +2,12 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import { Link } from 'react-router-dom'
 
-
 const Home = () => {
   return (
     <div className="home-main">
       <Navbar />
         <div className="homepage-banner">
-          <video className="homepage-banner-video" autoPlay="autoplay" loop="loop" muted="muted" src="/assets/horseLooking-0207b2f773763bbf0849807622196d80ad8a56f8c7062bb78527404631a70a16.mp4"></video>
+          <video alt="Horse looking around" className="homepage-banner-video" autoPlay="autoplay" loop="loop" muted="muted" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horseLooking.mp4"></video>
           <div className="home-banner-text">
             <h2>Maddie Veterinary Physiotherapy</h2>
             <h3>Specialist Equine and Canine Rehabilitation from Veterinary Physiotherapy Expert.</h3>
@@ -16,7 +15,7 @@ const Home = () => {
         </div>
         <div className="physio-banner">
           <div className="grey-backer-right">
-            <img alt="Image of a rider patting her horse" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-poles.webp"></img>
+            <img alt="Rider patting her horse" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-pat.jpeg"></img>
           </div>
           <h2>What is Veterinary Physio?</h2>
           <Link to={"/about/physio"} className="button-large">
@@ -54,8 +53,8 @@ const Home = () => {
               </p>
             </li>
           </ul>
-        <img alt="Image of a horse receiving therapy" src="/assets/horse-convulsion-therapy-fcab295d9345604083858b55ebb7f229441788e8704dfda57c5c7f3501abf0d1.webp"></img>
-        <img alt="Image of a poorly dog in his bed" src="/assets/dog-bed-0e54610141c4fabc8df26f1db2db601d7904933a7ede6d695de4f6d237deb731.webp"></img>
+        <img alt="Image of a horse receiving therapy" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-convulsion-therapy.webp"></img>
+        <img alt="Image of a poorly dog in his bed" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/Dog-bed.webp"></img>
           <ul className="list">
             <li className="list-item">
               <p>
@@ -80,9 +79,11 @@ const Home = () => {
         </div>
 
         <div className="recent-blog-posts">
-          <h2>Most Recent Blog</h2>
-          <Link to={'/blog'} className="blog-post">
-            <img alt="image of a horse walking over poles" src="/assets/horse-poles-fe57ecd7d1d61211b9140f54f58324a4f2ace74dc8b52d46001eb9c7c60fb36c.webp"/>
+
+
+          <h2>Check out a Blog Post</h2>
+          <Link to={'/blog/1'} className="blog-post">
+            <img alt="image of a horse walking over poles" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-poles.webp"/>
             <h4>Perfect Pole Work - A Fun Exercise for You and Your Horse</h4>
             <p>Jan 26, 2022</p>
             <p>
@@ -94,13 +95,13 @@ const Home = () => {
 
         <div className="lightbox-container">
           <div className="lightbox">
-            <img src="/assets/dog-sofa-6b6a3a5d929187ed808276ac0266d86dc7c6b8b92d6ac1b12b67297ccae0425a.jpg"/>
-            <img src="/assets/horse-white-arena-e1cc80c02d07e3973ac12a4d7bb3599c8d195e11fb8cfa73ffeaf917e4ab3def.jpg"/>
-            <img src="/assets/cat-sitting-de4f03d35501331c1d7855f3439881086903dee80c4b288cd3a8e73eef9839a1.webp"/>
-            <img src="/assets/dog-sofa-2-12f4dfd7a87e98f22a2468393beff0d4fe2e7ca14b2acf2260342926d7046027.jpg"/>
-            <img src="/assets/dogs-sofa-6c9915a61a7b4d49e2792cfb6d8c2f2455cffa53e3de3cbbe40dac0db29a5b2f.webp"/>
-            <img src="/assets/guinea-pig-maddie-67dc486513e5dae919dd2b509a7a0c0e8f99cb679f04467a2723d0c31ec8e8af.webp"/>
-            <img src="/assets/horse-arena-sand-c897e07aec453dd879fcb58e020a4adc2bf8cf1b2b303e94c26891cb1ebca59e.jpg"/>
+            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/dog-sofa.jpeg"/>
+            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-white-arena.jpeg"/>
+            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/cat-sitting.webp"/>
+            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/dog-sofa-2.jpeg"/>
+            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/dogs-sofa.webp"/>
+            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/guinea-pig-maddie.webp"/>
+            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-arena-sand.jpeg"/>
           </div>
         </div>
     </div>
