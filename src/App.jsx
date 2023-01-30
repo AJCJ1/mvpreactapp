@@ -14,6 +14,7 @@ import Terms from "./Terms"
 import Blog from "./Blog"
 import Services from "./Services"
 import Pricing from "./Pricing"
+import PostFull from "./PostFull"
 
 // initiates a new query client, sets the queries to cache for infinity so user
 // can access blog posts faster, and less requests to my API server.
@@ -38,7 +39,7 @@ const App = () => {
                 <Route exact path="/about/testimonials" element={<Testimonials />} />
                 <Route exact path="/about/terms-and-conditions" element={<Terms />} />
                 <Route exact path="/blog" element={<Blog />} />
-                {/* <Route path="/blog/:id" element={<Post />} /> */}
+                <Route path="/blog/:id" element={<PostFull />} />
                 <Route exact path="/services" element={<Services />} />
                 <Route exact path="/pricing" element={<Pricing />} />
               </Routes>
