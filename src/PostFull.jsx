@@ -18,24 +18,44 @@ const PostFull = () => {
   }
 
   const post = result.data.post
-
   const imageURLs = [...post.content.matchAll(regex)]
-  console.log(imageURLs)
+
   const imgregexp = /\[img:https:\/\/imagestoragemvp.s3.eu-west-2.amazonaws.com\/[^\]]*\]/g;
-  const finalContent = post.content.replace(imgregexp, "")
+  const nameRegex = /([\w\d_-]*)\.?[^\\/]*$/i
+
+  let prevPosition = 0
+  let filteredContent = []
+  let textArray = []
+  let imageNames = []
+
+  for (let i=0; i < imageURLs.length; i++) {
+    // index -5 because link starts after [img:
+    // cuts text at each image breakpoint, pushes into textArray
+    textArray.push(post.content.substring(prevPosition,
+                                          (imageURLs[i].index - 5)).replace(imgregexp, ""))
+    prevPosition = imageURLs[i].index - 5
+    // take each image, make array imageNames hold name of image
+    imageNames = imageURLs.map((link) => {
+      return link = link[0].match(nameRegex)
+    })
+    // takes each item turns into HTML with corresponding image.
+    // alt equal to the file name in URL
+    filteredContent.push(
+      <>
+        <p className="text-main">{textArray[i]}</p>
+        <img src={imageURLs[i] ? imageURLs[i] : null } alt={imageNames[i][1]}></img>
+      </>
+    );
+  }
+  // const finalContent = post.content.replace(imgregexp, "")
+
 
 return (
-
   <div>
-    <h1>{post.title}</h1>
-    <h2>{post.description}</h2>
-    <p>{finalContent}</p>
-
-  <h3>
-    <Link to="/blog">Go Back 🎠</Link>
-  </h3>
-
-
+    { filteredContent }
+    <h3>
+      <Link to="/blog">Go Back 🎠</Link>
+    </h3>
   </div>
 )
 
