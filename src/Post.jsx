@@ -1,15 +1,24 @@
-import React from 'react';
+import { Link } from "react-router-dom"
 
-const Post = (props) => {
-  const { post } = props;
+// this is the summary component which will display in the blog list overview
+
+const Post = ({ id, title, content, description, references }) => {
+
+  const regex = /https:\/\/[\w-]+\.s3\.[\w-]+\.amazonaws\.com\/[\w-]+\.[\w-]+/
+  const match = content.match(regex)
+  const firstLink = match ? match[0] : null
 
   return (
-    <div>
-      <h1>{post.title}</h1>
-      <p>{post.content}</p>
-      <p>By: {post.author}</p>
-    </div>
-  );
+    <Link to={`/blog/${id}`} className="post">
+      <div className="image-container">
+        <img alt={title} src={firstLink}></img>
+      </div>
+      <div className="info">
+        <h1>{id}. {title} - {description}</h1>
+        <p>{content.substring(0, 250)}... Read More 📖</p>
+      </div>
+    </Link>
+  )
 }
 
-export default Post;
+export default Post
