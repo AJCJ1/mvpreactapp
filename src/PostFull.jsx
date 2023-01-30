@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 import fetchPost from "./FetchPost"
 import { useQuery } from '@tanstack/react-query'
-import  { useParams, useNavigate } from "react-router-dom"
+import  { useParams } from "react-router-dom"
+import { regex } from "./Post"
 
 const PostFull = () => {
 
-  const navigate = useNavigate()
   const { id } = useParams()
   const result = useQuery(["post", id], fetchPost)
 
@@ -19,12 +19,17 @@ const PostFull = () => {
 
   const post = result.data.post
 
+  const imageURLs = [...post.content.matchAll(regex)]
+  console.log(imageURLs)
+  const imgregexp = /\[img:https:\/\/imagestoragemvp.s3.eu-west-2.amazonaws.com\/[^\]]*\]/g;
+  const finalContent = post.content.replace(imgregexp, "")
+
 return (
 
   <div>
     <h1>{post.title}</h1>
     <h2>{post.description}</h2>
-    <p>{post.content}</p>
+    <p>{finalContent}</p>
 
   <h3>
     <Link to="/blog">Go Back 🎠</Link>
