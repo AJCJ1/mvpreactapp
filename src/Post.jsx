@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
+import { URLRegexp } from "./Regexp_Constants"
 
-// this is the summary component which will display in the blog list overview
-const regex = /https:\/\/[\w-]+\.s3\.[\w-]+\.amazonaws\.com\/[\w-]+\.[\w-]+/g
+// summary component which will display in the blog list overview
 
 const Post = ({ id, title, content, description, references }) => {
 
-  const match = content.match(regex)
+  const match = content.match(URLRegexp)
   const firstLink = match ? match[0] : null
 
   return (
@@ -22,4 +22,3 @@ const Post = ({ id, title, content, description, references }) => {
 }
 
 export default Post
-export { regex }

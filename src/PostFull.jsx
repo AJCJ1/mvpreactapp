@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import fetchPost from "./FetchPost"
 import { useQuery } from '@tanstack/react-query'
 import  { useParams } from "react-router-dom"
-import { imgNameRegexp, URLRegexp, imgRegexp } from "./Regexp_Constants"
+import { imgNameRegexp, URLRegexp, imgRegexp, vidContextURLRegexp, vidURLRegexp } from "./Regexp_Constants"
 
 const PostFull = () => {
   const { id } = useParams()
@@ -15,14 +15,15 @@ const PostFull = () => {
     )
   }
   const post = result.data.post
-  const imageURLs = [...post.content.matchAll(URLRegexp)]
-  // const videoURLs = [...post.content.matchAll(vidRegex)]
-  // const imgregexp = /\[img:https:\/\/imagestoragemvp.s3.eu-west-2.amazonaws.com\/[^\]]*\]/g
-  // const nameRegex = /([\w\d_-]*)\.?[^\\/]*$/i
+  const videoURLs = [...post.content.matchAll(vidContextURLRegexp)]
+  const postLessVideos = post.content.replace(vidContextURLRegexp, "")
+  const imageURLs = [...postLessVideos.matchAll(URLRegexp)]
+
   let prevPosition = 0
   let filteredContent = []
   let textArray = []
   let imageNames = []
+
   for (let i=0; i < imageURLs.length; i++) {
     // index -5 because link starts after [img:
     // cuts text at each image breakpoint, pushes into textArray
@@ -38,15 +39,27 @@ const PostFull = () => {
     filteredContent.push(
       <>
         <p className="text-main">{textArray[i]}</p>
-        <img src={imageURLs[i] ? imageURLs[i] : null } alt={imageNames[i][1]}></img>
+          <img src=
+            {
+              imageURLs[i] ? imageURLs[i] : null
+            }
+            alt={imageNames[i][1]}></img>
       </>
+    )
+  }
+  let videoHTML = []
+  // temporary hard code, video known in blog post at end. If new posts, make this 'higher order'.
+  if (videoURLs[0]) {
+    videoHTML.push(
+      <video controls src={videoURLs[0][0].match(vidURLRegexp)} alt={videoURLs[0]}></video>
     )
   }
   return (
     <div>
       { filteredContent }
+      { videoURLs ? videoHTML : null }
       <h3>
-        <Link to="/blog">Go Back 🎠</Link>
+        <Link to="/blog">Go Back 👈</Link>
       </h3>
     </div>
   )
