@@ -12,9 +12,6 @@ const Blog = () => {
 
   const results = useQuery(['posts'], fetchPosts)
   const posts = results?.data?.posts ?? []
-
-  console.log('Results:', results)
-
     return (
       <div className="blog-main">
         <Navbar />
@@ -25,6 +22,7 @@ const Blog = () => {
               <Post
                 title={post.title}
                 description={post.description}
+                content={post.content}
                 id={post.id}
                 key={post.id}/>
             ))

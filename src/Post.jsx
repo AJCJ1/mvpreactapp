@@ -3,16 +3,19 @@ import { Link } from "react-router-dom"
 // this is the summary component which will display in the blog list overview
 
 const Post = ({ id, title, content, description, references }) => {
+
+  const regex = /https:\/\/[\w-]+\.s3\.[\w-]+\.amazonaws\.com\/[\w-]+\.[\w-]+/
+  const match = content.match(regex)
+  const firstLink = match ? match[0] : null
+
   return (
     <Link to={`/blog/${id}`} className="post">
       <div className="image-container">
-        {/* empty for now, will be the hero image */}
-        {/* <img src={} alt={title} /> */}
-        {/* this eventually needs to be first image link */}
-        {/* could name correctly then interpolate with s3bucket/id */}
+        <img alt={title} src={firstLink}></img>
       </div>
       <div className="info">
-        <h1>{title} - {description}</h1>
+        <h1>{id}. {title} - {description}</h1>
+        <p>{content.substring(0, 250)}... Read More 📖</p>
       </div>
     </Link>
   )
