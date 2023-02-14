@@ -16,13 +16,13 @@ const Services = () => {
           </p>
         </div>
         <img
-          alt="Horse receiving therapy"
+          alt="Horse receiving ECT therapy"
           src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-convulsion-therapy.webp"
         ></img>
       </header>
       <section>
         <img
-          alt="Rider with pink top holding her horse"
+          alt="Rider with pink top holding her brown horse"
           src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/rider-holding-horse.webp"
         ></img>
         <h3>The Service</h3>
@@ -51,7 +51,7 @@ const Services = () => {
           challenging to encourage personal growth and a successful outcome.
         </p>
         <img
-          alt="A poorly dog in his bed"
+          alt="A poorly dog in his bed receiving ECT therapy"
           src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/Dog-bed.webp"
         ></img>
         <h2>

@@ -10,7 +10,7 @@ const Home = () => {
         </nav>
         <section className="homepage-banner-container">
           <video
-            alt="Horse looking around"
+            alt="A brown Horse looking around"
             className="homepage-banner-video"
             autoPlay="autoplay"
             loop="loop"
@@ -72,11 +72,11 @@ const Home = () => {
             </li>
           </ul>
           <img
-            alt="A horse receiving therapy"
+            alt="A horse receiving ECT therapy"
             src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-convulsion-therapy.webp"
           ></img>
           <img
-            alt="A poorly dog in his bed"
+            alt="A poorly dog in his bed receiving ECT Therapy"
             src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/Dog-bed.webp"
           ></img>
           <ul className="list">

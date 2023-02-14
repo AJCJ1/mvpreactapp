@@ -22,14 +22,14 @@ const Me = () => {
           </p>
           <img
             className="side-image"
-            alt="Rider on horseback looking away"
+            alt="A selfie of maddie with a brown horse"
             src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/maddie-wigley-selfie.webp"
           ></img>
         </div>
         <div class="about-main-block">
           <img
             className="side-image"
-            alt="back of a saddle"
+            alt="A small puppy at a vet"
             src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/cute-puppy-vet.jpeg"
           ></img>
           <h3>What I Do</h3>
@@ -62,7 +62,7 @@ const Me = () => {
           </p>
           <img
             className="side-image"
-            alt="Rider behind a jump"
+            alt="Maddie holding a small white dog with big paws"
             src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/maddie-wigley-with-pup.webp"
           ></img>
         </div>
