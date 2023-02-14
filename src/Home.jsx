@@ -5,15 +5,17 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div className="home-main">
+      <header>
       <Navbar />
-        <div className="homepage-banner">
+        <section className="homepage-banner">
           <video alt="Horse looking around" className="homepage-banner-video" autoPlay="autoplay" loop="loop" muted="muted" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horseLooking.mp4"></video>
           <div className="home-banner-text">
             <h2>Maddie Veterinary Physiotherapy</h2>
             <h3>Specialist Equine and Canine Rehabilitation from Veterinary Physiotherapy Expert.</h3>
           </div>
-        </div>
-        <div className="physio-banner">
+        </section>
+      </header>
+        <section className="physio-banner">
           <div className="grey-backer-right">
             <img alt="Rider patting her horse" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-pat.jpeg"></img>
           </div>
@@ -29,7 +31,7 @@ const Home = () => {
               osteoarthritis, and other health related conditions.
             </p>
           </div>
-        </div>
+        </section>
         <div className="home-how-it-works">
           <h2>How Does it Work?</h2>
           <ul className="list">
@@ -53,8 +55,8 @@ const Home = () => {
               </p>
             </li>
           </ul>
-        <img alt="Image of a horse receiving therapy" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-convulsion-therapy.webp"></img>
-        <img alt="Image of a poorly dog in his bed" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/Dog-bed.webp"></img>
+        <img alt="A horse receiving therapy" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-convulsion-therapy.webp"></img>
+        <img alt="A poorly dog in his bed" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/Dog-bed.webp"></img>
           <ul className="list">
             <li className="list-item">
               <p>
@@ -79,11 +81,9 @@ const Home = () => {
         </div>
 
         <div className="recent-blog-posts">
-
-
           <h2>Check out a Blog Post</h2>
           <Link to={'/blog/1'} className="blog-post">
-            <img alt="image of a horse walking over poles" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-poles.webp"/>
+            <img alt="A horse walking over poles" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-poles.webp"/>
             <h4>Perfect Pole Work - A Fun Exercise for You and Your Horse</h4>
             <p>Jan 26, 2022</p>
             <p>
@@ -93,17 +93,17 @@ const Home = () => {
           </Link>
         </div>
 
-        <div className="lightbox-container">
+        <section className="lightbox-container">
           <div className="lightbox">
-            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/dog-sofa.jpeg"/>
-            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-white-arena.jpeg"/>
-            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/cat-sitting.webp"/>
-            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/dog-sofa-2.jpeg"/>
-            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/dogs-sofa.webp"/>
-            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/guinea-pig-maddie.webp"/>
-            <img src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-arena-sand.jpeg"/>
+            <img alt="Dog sat on a sofa" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/dog-sofa.jpeg"/>
+            <img alt="White Horse riding in an arena" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-white-arena.jpeg"/>
+            <img alt="A grumpy looking cat sitting" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/cat-sitting.webp"/>
+            <img alt="A dog sat on a sofa" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/dog-sofa-2.jpeg"/>
+            <img alt="Many dogs sat on a sofa" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/dogs-sofa.webp"/>
+            <img alt="Maddie holding a guinea pig" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/guinea-pig-maddie.webp"/>
+            <img alt="A horse riding in an arena" src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-arena-sand.jpeg"/>
           </div>
-        </div>
+        </section>
     </div>
   )
 }
