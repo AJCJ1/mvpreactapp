@@ -1,5 +1,9 @@
-import React from "react";
+import ReactDOM from "react-dom/client";
+import { createRoot } from 'react-dom/client';
+
+// imports reactQuery for caching API responses
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
 // router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -17,6 +21,7 @@ import Blog from "./Blog";
 import Services from "./Services";
 import Pricing from "./Pricing";
 import PostFull from "./PostFull";
+import { StrictMode } from "react";
 
 // initiates a new query client, sets the queries to cache for infinity so user
 // can access blog posts faster, and less requests to my API server.
@@ -31,7 +36,7 @@ const queryClient = new QueryClient({
 
 const App = () => {
   return (
-    <div className="root">
+    <StrictMode>
       <BrowserRouter>
         <QueryClientProvider client={queryClient}>
           <Routes>
@@ -56,8 +61,10 @@ const App = () => {
         </QueryClientProvider>
       </BrowserRouter>
       <Footer />
-    </div>
+    </StrictMode>
   );
 };
 
-export default App;
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App />);
