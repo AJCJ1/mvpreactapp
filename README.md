@@ -2,16 +2,10 @@ This is a Landing Page made with React functional components, react router, reac
 
 It connects to a Ruby-on-Rails API hosted on Heroku, which hosts the companies 'blogs' in a stored PostgreSQL database.
 
-The current stages of development are as follows:
-
-- HTML is added, but needs to be made semantic RE accessibility and SEO (with a11y config)
-- SCSS to be setup, and styling to be applied
-
-
-
+The site is now in its final stages, whereby it is functional, but styling needs to be applied.
 
 The figma design is available <a href="https://www.figma.com/file/kdbXeIOHiAobvLZsQX4hB9/MVP---Maddie-Veterinary-Physiotherapy?node-id=0%3A1&t=T0LsNwlW0B7L70nf-1">here</a>
 
-It is the 'front end' of a veterinary physiotherapy site and is currently in development
+It is the 'front end' of a veterinary physiotherapy site and is currently in development.
 
 It will receive a full readme as progress continues alongside a TDD to fully document production.
