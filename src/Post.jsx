@@ -8,17 +8,19 @@ const Post = ({ id, title, content, description, references }) => {
   const firstLink = match ? match[0] : null;
 
   return (
-    <Link to={`/blog/${id}`} className="post">
-      <div className="image-container">
-        <img alt={title} src={firstLink}></img>
-      </div>
-      <div className="info">
-        <h1>
-          {id}. {title} - {description}
-        </h1>
-        <p>{content.substring(0, 250)}... Read More 📖</p>
-      </div>
-    </Link>
+    <article>
+      <Link to={`/blog/${id}`} className="post">
+        <div className="image-container">
+          <img alt={title} src={firstLink}></img>
+        </div>
+        <div className="info">
+          <h2>
+            {id}. {title} - {description}
+          </h2>
+          <p>{content.substring(0, 250)}... Read More 📖</p>
+        </div>
+      </Link>
+    </article>
   );
 };
 

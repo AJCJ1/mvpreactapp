@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import { createRoot } from 'react-dom/client';
+import { createRoot } from "react-dom/client";
 
 // imports reactQuery for caching API responses
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";

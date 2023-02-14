@@ -12,10 +12,13 @@ const Blog = () => {
   const results = useQuery(["posts"], fetchPosts);
   const posts = results?.data?.posts ?? [];
   return (
-    <div className="blog-main">
-      <Navbar />
+    <main className="blog-main">
+      <header className="blog-header">
+        <Navbar />
+        <h1>My Blog Posts</h1>
+      </header>
       {!posts.length ? (
-        <h1>No posts Found</h1>
+        <h2>No posts Found 😢</h2>
       ) : (
         posts.map((post) => (
           <Post
@@ -27,7 +30,7 @@ const Blog = () => {
           />
         ))
       )}
-    </div>
+    </main>
   );
 };
 

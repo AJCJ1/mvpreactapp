@@ -4,7 +4,7 @@ import ContactModal from "./ContactModal";
 
 const Navbar = () => {
   return (
-    <div className="navbar-main">
+    <header className="navbar-main">
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
           <Link to={"/"} className="home-link">
@@ -52,15 +52,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="m-1 nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  About
-                </a>
+                <h3>About</h3>
                 <ul className="dropdown-menu">
                   <li>
                     <Link to={"/about/physio"} className="dropdown-item">
@@ -86,7 +78,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 
