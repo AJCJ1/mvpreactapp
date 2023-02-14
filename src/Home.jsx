@@ -40,10 +40,11 @@ const Home = () => {
           </Link>
           <div className="blue-backer-left">
             <p>
-              Veterinary Physiotherapy is the assessment and treatment of animals
-              to improve function and performance of the body.Issues that can be
-              targeted through physiotherapy include musculoskeletal conditions
-              and injuries, osteoarthritis, and other health related conditions.
+              Veterinary Physiotherapy is the assessment and treatment of
+              animals to improve function and performance of the body.Issues
+              that can be targeted through physiotherapy include musculoskeletal
+              conditions and injuries, osteoarthritis, and other health related
+              conditions.
             </p>
           </div>
         </section>
@@ -94,8 +95,8 @@ const Home = () => {
             <li className="list-item">
               <p>
                 Our objective is to improve an animals health and well-being by
-                reducing pain, limiting injury impact, and improve joint range of
-                motion.
+                reducing pain, limiting injury impact, and improve joint range
+                of motion.
               </p>
             </li>
           </ul>
