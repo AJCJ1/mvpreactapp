@@ -1,3 +1,16 @@
+// Graphical variables
+@import "./config/Fonts.scss";
+@import "./config/Colors.scss";
+
+// CSS partials
+@import "components/Components";
+
+// Static styling for general elements
+
+body {
+  background-color: $white;
+}
+
 .grey-backer-right {
   img {
     width: 20%;
