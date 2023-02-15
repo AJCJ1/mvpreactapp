@@ -5,7 +5,7 @@ import ContactModal from "./ContactModal";
 const Navbar = () => {
   return (
     <>
-    <nav className="navbar-main navbar-expand-lg navbar fixed-top">
+    <nav className="navbar-main navbar-expand-lg navbar navbar-dark fixed-top">
       <div class="container-fluid">
         <Link to={"/"} className="home-link">
           <h2><strong>M</strong>addie</h2>
@@ -23,10 +23,14 @@ const Navbar = () => {
           >
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="text-bg-dark bg-dark offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <h2 class="navbar-title-text offcanvas-title" id="offcanvasNavbarLabel">
+          <h2><strong>M</strong>addie</h2>
+          <h2><strong>V</strong>et </h2>
+          <h2><strong>P</strong>hysiotherapy</h2>
+        </h2>
+        <button type="button" class="x-button btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -46,26 +50,41 @@ const Navbar = () => {
             </Link>
           </li>
           <li class="nav-item">
+            <Link to={"/blog"} className="dropdown-item">
+              <p>Blog</p>
+            </Link>
+          </li>
+          <li class="nav-item">
             <ContactModal />
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="text-light nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               About
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <Link to={"/about/physio"} className="dropdown-item">
+                  <p>About Vet Physiotherapy</p>
+                </Link>
+              </li>
+              <li>
+                <Link to={"/about/me"} className="dropdown-item">
+                  <p>About Me</p>
+                </Link>
+              </li>
               <li>
                 <hr class="dropdown-divider"/>
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <Link
+                  to={"/about/terms-and-conditions"}
+                  className="dropdown-item">
+                  <p>Terms and conditions</p>
+                </Link>
+              </li>
             </ul>
           </li>
         </ul>
-        <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </div>
@@ -74,9 +93,6 @@ const Navbar = () => {
 
 
 
-              <li className="nav-item m-1">
-                <ContactModal />
-              </li>
               <li className="nav-item m-1">
                 <Link to={"/blog"} className="dropdown-item">
                   <p>Blog</p>
@@ -88,18 +104,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="m-1 nav-item dropdown">
-                <h3>About</h3>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link to={"/about/physio"} className="dropdown-item">
-                      <p>About Vet Physiotherapy</p>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/about/me"} className="dropdown-item">
-                      <p>About Me</p>
-                    </Link>
-                  </li>
+
+
                   <li className="nav-item">
                     <Link
                       to={"/about/terms-and-conditions"}

@@ -28,3 +28,36 @@
     }
   }
 }
+
+// navbar toggler
+
+.navbar-toggler {
+  // removes default bootstrap styling
+  border:none !important;
+  margin: auto 0;
+  transition: none !important;
+  --bs-navbar-toggler-focus-width: none !important;
+}
+.navbar-toggler-icon {
+  font-size: 8vw;
+  line-height: normal;
+}
+.navbar-title-text {
+  height: 15vh;
+  font-family: $FontFamily;
+  color:$white;
+  h2 {
+  font-size: $H2FontSize;
+  }
+  strong {
+    font-size: $H1FontSize;
+  }
+}
+.btn-close {
+  position: absolute;
+  right: 10vw;
+  top: 10vw;
+  font-size: 8vw;
+  border:none !important;
+  transition: none !important;
+}
