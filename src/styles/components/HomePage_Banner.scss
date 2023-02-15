@@ -1,0 +1,37 @@
+.homepage-banner-container {
+  height: calc(100vw + 15vh);
+  width: 100vw;
+  h1 {
+    font-weight: $FontBold;
+  }
+  h2 {
+    font-size: $H2FontSize;
+    width: 75%;
+  }
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+}
+
+.homepage-banner-video {
+  position:absolute;
+  height:100vw;
+  width:100vw;
+  top:15vh;
+  left:0;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.home-banner-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 55vw;
+  color: $white;
+  height: 100%;
+  width: 100%;
+}

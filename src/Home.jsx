@@ -16,7 +16,8 @@ const Home = () => {
             loop="loop"
             muted="muted"
             src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horseLooking.mp4"
-          ></video>
+          >
+          </video>
           <div className="home-banner-text">
             <h1>Maddie Veterinary Physiotherapy</h1>
             <h2>
@@ -24,6 +25,7 @@ const Home = () => {
               Physiotherapy Expert.
             </h2>
           </div>
+
         </section>
       </header>
       <main>
