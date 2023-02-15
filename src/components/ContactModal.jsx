@@ -20,7 +20,7 @@ const ContactModal = () => {
       </button>
 
       {modal && (
-        <div className="modal">
+        <div className="contact-modal">
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <button onClick={toggleModal}>X</button>

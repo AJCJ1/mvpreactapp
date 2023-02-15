@@ -1,0 +1,66 @@
+.navbar-main {
+  height: 15vh;
+  width: 100vw;
+  background-color: $darkBlue;
+}
+#offcanvasNavbar {
+  width:100vw;
+}
+.home-link {
+  margin-left: 2.5vw;
+  margin-top: 1vw;
+  text-decoration: none;
+  width: fit-content;
+  color: $white;
+  transition: 0.15s ease;
+  &:hover {
+    color:$white;
+    strong {
+      color:$blue;
+      transition: 0.15s ease;
+    }
+  }
+  h2 {
+    font-size: $H2FontSize;
+    font-weight: $FontNorm;
+    strong {
+      font-size: $H1FontSize;
+    }
+  }
+}
+
+// navbar toggler
+
+.navbar-toggler {
+  // removes default bootstrap styling
+  border:none !important;
+  margin: auto 0;
+  transition: none !important;
+  --bs-navbar-toggler-focus-width: none !important;
+}
+.navbar-toggler-icon {
+  font-size: 8vw;
+  line-height: normal;
+}
+.navbar-title-text {
+  height: 15vh;
+  font-family: $FontFamily;
+  color:$white;
+  h2 {
+  font-size: $H2FontSize;
+  }
+  strong {
+    font-size: $H1FontSize;
+  }
+}
+.btn-close {
+  position: absolute;
+  right: 10vw;
+  top: 10vw;
+  font-size: 8vw;
+  border:none !important;
+  transition: none !important;
+}
+.offcanvas-body {
+  text-align: center;
+}

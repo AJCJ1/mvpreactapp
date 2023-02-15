@@ -8,7 +8,13 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // // import scss
-import "./styles/App.scss";
+import "./styles/Index.scss";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery/dist/jquery.min.js';
+import '@popperjs/core';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+
 
 // components
 import Footer from "./components/Footer";
