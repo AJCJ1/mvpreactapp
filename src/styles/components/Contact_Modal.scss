@@ -1,0 +1,17 @@
+.contact-modal {
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal-content {
+  margin: 0 auto;
+}
+
+.overlay {
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: $blackOverlay;
+  transition: 0.2s ease;
+}

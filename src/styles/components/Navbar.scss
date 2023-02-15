@@ -1,5 +1,20 @@
 .navbar-main {
-  height: min-content;
+  height: 15vh;
   width: 100vw;
-  border:1px solid red;
+  background-color: $darkBlue;
+}
+#offcanvasNavbar {
+  width:100vw;
+}
+.home-link {
+  text-decoration: none;
+  width: fit-content;
+  color: $white;
+  h2 {
+    font-size: $H2FontSize;
+    font-weight: $FontNorm;
+    strong {
+      font-size: $H1FontSize;
+    }
+  }
 }

@@ -5,28 +5,52 @@ import ContactModal from "./ContactModal";
 const Navbar = () => {
   return (
     <>
-    <nav class="navbar bg-light fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Offcanvas navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
+    <nav className="navbar-main navbar-expand-lg navbar fixed-top">
+      <div class="container-fluid">
+        <Link to={"/"} className="home-link">
+          <h2><strong>M</strong>addie</h2>
+          <h2><strong>V</strong>et</h2>
+          <h2><strong>P</strong>hysiotherapy</h2>
+        </Link>
+        <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <Link to={"/"} className="dropdown-item">
+              <p>Home</p>
+            </Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <Link to={"/services"} className="dropdown-item">
+              <p>My Services</p>
+            </Link>
+          </li>
+          <li class="nav-item">
+            <Link to={"/pricing"} className="dropdown-item">
+              <p>Pricing</p>
+            </Link>
+          </li>
+          <li class="nav-item">
+            <ContactModal />
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              About
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
@@ -46,39 +70,10 @@ const Navbar = () => {
     </div>
   </div>
 </nav>
-      <nav className="navbar-main">
-        <div className="container-fluid">
-          <Link to={"/"} className="home-link">
-            <p>MVP - Maddie Vet Physio</p>
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item m-1">
-                <Link to={"/"} className="dropdown-item">
-                  <p>Home</p>
-                </Link>
-              </li>
-              <li className="nav-item m-1">
-                <Link to={"/services"} className="dropdown-item">
-                  <p>My Services</p>
-                </Link>
-              </li>
-              <li className="nav-item m-1">
-                <Link to={"/pricing"} className="dropdown-item">
-                  <p>Pricing</p>
-                </Link>
-              </li>
+      {/*
+
+
+
               <li className="nav-item m-1">
                 <ContactModal />
               </li>
@@ -118,7 +113,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
       </>
   );
 };

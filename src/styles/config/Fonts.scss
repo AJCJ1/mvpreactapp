@@ -1,1 +1,17 @@
-// define core fonts here including per viewport size
+// This document clears default font sizing, then applies custom sizing per VP size.
+
+* {
+  // clears default font-sizing, and applies custom font to all
+  font-size: initial;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+// currently hardcoded fonts but needs work on completion of mobile first hp
+$H1FontSize: 20px;
+$H2FontSize: 16px;
+
+
+$FontFamily: 'Gothic A1', sans-serif;
+$FontBold: 900;
+$FontThin: 100;
+$FontNorm: 400;
