@@ -1,6 +1,6 @@
 This is a Landing Page made with React functional components, react router, react query and emailJS.
 
-It connects to a Ruby-on-Rails API hosted on Heroku, which hosts the companies 'blogs' in a stored PostgreSQL database.
+It connects to a Ruby-on-Rails API hosted on Heroku, available on <a href="https://github.com/AJCJ1/blog_api">this repo</a>, which hosts the companies 'blogs' in a stored PostgreSQL database.
 
 The site is now in its final stages, whereby it is functional, but styling needs to be applied.
 
