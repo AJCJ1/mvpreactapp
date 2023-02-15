@@ -1,0 +1,14 @@
+.homepage-banner-container {
+  height:90vh;
+  width: 100vw;
+}
+
+.homepage-banner-video {
+  position:absolute;
+  height:100vw;
+  width:100vw;
+  top:15vh;
+  left:0;
+  object-fit: cover;
+  object-position: center;
+}
