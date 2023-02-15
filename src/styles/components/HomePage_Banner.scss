@@ -28,11 +28,10 @@
 .home-banner-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
-  color: $white;
   align-items: center;
+  padding-top: 55vw;
+  color: $white;
   height: 100%;
   width: 100%;
-  border: 1px solid red;
 }
