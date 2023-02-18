@@ -1,4 +1,5 @@
 // Import all component scss files here
 @import "Navbar";
 @import "Contact_Modal";
-@import "HomePage_Banner";
+@import "./Home/HomePage_Banner";
+@import "./Home/What_is_physio.scss";

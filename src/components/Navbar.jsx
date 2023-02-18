@@ -8,9 +8,9 @@ const Navbar = () => {
     <nav className="navbar-main navbar-expand-lg navbar navbar-dark fixed-top">
       <div class="container-fluid">
         <Link to={"/"} className="home-link">
-          <h2><strong>M</strong>addie</h2>
-          <h2><strong>V</strong>et</h2>
-          <h2><strong>P</strong>hysiotherapy</h2>
+          <h3><strong>M</strong>addie</h3>
+          <h3><strong>V</strong>eterinary</h3>
+          <h3><strong>P</strong>hysiotherapy</h3>
         </Link>
         <button
             className="navbar-toggler"
@@ -25,11 +25,11 @@ const Navbar = () => {
     </button>
     <div class="text-bg-dark bg-dark offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h2 class="navbar-title-text offcanvas-title" id="offcanvasNavbarLabel">
-          <h2><strong>M</strong>addie</h2>
-          <h2><strong>V</strong>et </h2>
-          <h2><strong>P</strong>hysiotherapy</h2>
-        </h2>
+        <div class="navbar-title-text offcanvas-title" id="offcanvasNavbarLabel">
+          <h3><strong>M</strong>addie</h3>
+          <h3><strong>V</strong>eterinary </h3>
+          <h3><strong>P</strong>hysiotherapy</h3>
+        </div>
         <button type="button" class="x-button btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">

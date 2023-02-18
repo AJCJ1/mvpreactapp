@@ -20,34 +20,39 @@ const Home = () => {
           </video>
           <div className="home-banner-text">
             <h1>Maddie Veterinary Physiotherapy</h1>
-            <h2>
+            <h4>
               Specialist Equine and Canine Rehabilitation from Veterinary
-              Physiotherapy Expert.
-            </h2>
+              Physiotherapy Experts.
+            </h4>
           </div>
 
         </section>
       </header>
       <main>
-        <section className="physio-banner">
+        <section className="about-physio-home-container">
+          <header>
+            <h2>What is Veterinary Physiotherapy?</h2>
+            <Link to={"/about/physio"} className="button-large">
+              <span>Learn More</span>
+            </Link>
+          </header>
+
+              <div className="physio-summarised">
+                <p>
+                  Veterinary Physiotherapy is the assessment and treatment of
+                  animals to improve function and performance of the body.
+                </p>
+                <p>
+                  Issues that can be targeted through physiotherapy include
+                    musculoskeletal conditions and injuries, osteoarthritis,
+                    and other health related conditions.
+                </p>
+              </div >
           <div className="grey-backer-right">
             <img
               alt="Rider patting her horse"
               src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-pat.jpeg"
             ></img>
-          </div>
-          <h2>What is Veterinary Physio?</h2>
-          <Link to={"/about/physio"} className="button-large">
-            <span>Learn More</span>
-          </Link>
-          <div className="blue-backer-left">
-            <p>
-              Veterinary Physiotherapy is the assessment and treatment of
-              animals to improve function and performance of the body.Issues
-              that can be targeted through physiotherapy include musculoskeletal
-              conditions and injuries, osteoarthritis, and other health related
-              conditions.
-            </p>
           </div>
         </section>
         <section className="home-how-it-works">

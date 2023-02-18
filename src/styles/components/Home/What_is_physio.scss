@@ -1,0 +1,62 @@
+.about-physio-home-container {
+  width:100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    font-weight: $FontBold;
+    font-size: $H2FontSize;
+  }
+  header {
+    // What is veterinary physiotherapy?
+    width: 65%;
+    text-align: center;
+    margin: 1.5rem 0;
+    line-height: 5rem;
+  }
+
+  a {
+    // Learn More
+    color:$white;
+    background-color: $black;
+    padding: 1.1rem 1rem;
+    text-decoration: none;
+    margin: 1rem 0.5rem;
+    transition: 0.2s ease;
+    &:hover {
+      transition: 0.2s ease;
+      color: $black;
+      background-color: $white;
+    }
+  }
+}
+
+.physio-summarised {
+  position: relative;
+  right: 0;
+  p {
+    font-size: .80rem;
+  }
+  width: 75vw;
+  text-align: center;
+  background-color: $lightBlue;
+  padding: 1rem;
+}
+
+.grey-backer-right {
+  display: none;
+  img {
+    width: 50vw;
+    height: 85vw;
+    object-fit: cover;
+    // Adds blue filter
+    filter: hue-rotate(190deg);
+  }
+}
+// cheap and dirty way is to replicate the element and show/hide on screen size
+// second way is to make the image position:absolute and do some hard coded
+// styling, which won't look perfect, as it will be depending on height of viewport
+// so won't always be centred...
+
+// try with position first, and each screen size.
