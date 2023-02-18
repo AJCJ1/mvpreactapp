@@ -20,11 +20,11 @@
       transition: 0.15s ease;
     }
   }
-  h2 {
-    font-size: $H2FontSize;
+  h3 {
+    font-size: $H3FontSize;
     font-weight: $FontNorm;
     strong {
-      font-size: $H1FontSize;
+      font-size: calc($H3FontSize + 2px);
     }
   }
 }
@@ -46,11 +46,11 @@
   height: 15vh;
   font-family: $FontFamily;
   color:$white;
-  h2 {
-  font-size: $H2FontSize;
+  h3 {
+    font-size: $H3FontSize;
   }
   strong {
-    font-size: $H1FontSize;
+    font-size: calc($H3FontSize + 2px);
   }
 }
 .btn-close {
