@@ -208,7 +208,7 @@ const Home = () => {
         </section>
 
         <article className="recent-blog-posts">
-          <h2>Check out a Blog Post</h2>
+          <h2>Most Recent Blog</h2>
           <Link to={"/blog/1"} className="blog-post">
             <img
               alt="A horse walking over poles"
@@ -218,7 +218,7 @@ const Home = () => {
               <h4>Perfect Pole Work - A Fun Exercise for You and Your Horse</h4>
               <p>Jan 26, 2022</p>
             </header>
-            <p>
+            <p className="blog-content">
               Cavaletti poles are a useful training tool due to their role in
               making joints more supple and improving the individuals stamina
               and...
