@@ -1,0 +1,39 @@
+.how-it-works-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: $SmallMargin 0;
+
+  img {
+    width: 100vw;
+    height: 100vw;
+    object-fit: cover;
+    object-position: center;
+    border: $SmallBorder;
+  }
+}
+
+.point-list {
+  list-style: none;
+  width: 90vw;
+  margin: $SmallMargin 0;
+  padding: 0;
+}
+
+.point-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.point-list-text {
+  font-size: $ListFontSize;
+  text-align: center;
+  width: 85%;
+}
+
+.point-svg {
+  width: 15%;
+}

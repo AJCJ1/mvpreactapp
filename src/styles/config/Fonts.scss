@@ -1,4 +1,5 @@
 // This document clears default font sizing, then applies custom sizing per VP size.
+@import "./Colors.scss";
 
 * {
   // clears default font-sizing, and applies custom font to all
@@ -11,17 +12,23 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
 }
-
-
-// currently hardcoded fonts but needs work on completion of mobile first hp
+// Hardcoded fonts needs alteration on completion of mobile first
 $H1FontSize: 32px;
 $H2FontSize: 26px;
 $H3FontSize: 16px;
 $H4FontSize: 12px;
 $PFontSize: 1px;
-
-
+$ListFontSize: 14px;
+// Font family
 $FontFamily: 'Gothic A1', sans-serif;
 $FontBold: 900;
 $FontThin: 100;
 $FontNorm: 400;
+// Margin
+$SmallMargin: 20px;
+$LargeMargin: 40px;
+// Padding
+$SmallPadding: 16px;
+$LargePadding: 32px;
+// Borders
+$SmallBorder: 4px solid $black;

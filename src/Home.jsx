@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
 import { Link } from "react-router-dom";
 
+import "./Styles/Index.scss";
+
 const Home = () => {
   return (
     <div className="home-main">
@@ -55,23 +57,71 @@ const Home = () => {
             ></img>
           </div>
         </section>
-        <section className="home-how-it-works">
+        <section className="how-it-works-section">
           <h2>How Does it Work?</h2>
-          <ul className="list">
-            <li className="list-item">
-              <p>
+          <ul className="point-list">
+            <li className="point-list-item">
+              <svg className="point-svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_218_212)">
+                <rect x="6" y="6" width="20" height="20" fill="#AEDDED"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_218_212" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-6" dy="-6"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 1 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_218_212"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_218_212" result="shape"/>
+                </filter>
+                </defs>
+              </svg>
+              <p className="point-list-text">
                 Veterinary physiotherapy is a holistic approach to animal care,
                 using the animals anatomical makeup to help them recover.
               </p>
             </li>
-            <li className="list-item">
-              <p>
+            <li className="point-list-item">
+            <svg className="point-svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_218_212)">
+                <rect x="6" y="6" width="20" height="20" fill="#AEDDED"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_218_212" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-6" dy="-6"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 1 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_218_212"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_218_212" result="shape"/>
+                </filter>
+                </defs>
+              </svg>
+              <p className="point-list-text">
                 Its a modern and approved method of assisting injury
                 rehabilitation, and helping to maintain your animal.
               </p>
             </li>
-            <li className="list-item">
-              <p>
+            <li className="point-list-item">
+            <svg className="point-svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_218_212)">
+                <rect x="6" y="6" width="20" height="20" fill="#AEDDED"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_218_212" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-6" dy="-6"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 1 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_218_212"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_218_212" result="shape"/>
+                </filter>
+                </defs>
+            </svg>
+              <p className="point-list-text">
                 Animals often hide their pain and discomfort. By using
                 physiotherapy, these issues can be addressed before they become
                 problematic.
@@ -82,31 +132,79 @@ const Home = () => {
             alt="A horse receiving ECT therapy"
             src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/horse-convulsion-therapy.webp"
           ></img>
-          <img
-            alt="A poorly dog in his bed receiving ECT Therapy"
-            src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/Dog-bed.webp"
-          ></img>
-          <ul className="list">
-            <li className="list-item">
-              <p>
+          <ul className="point-list">
+            <li className="point-list-item">
+              <svg className="point-svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_218_212)">
+                  <rect x="6" y="6" width="20" height="20" fill="#AEDDED"/>
+                  </g>
+                  <defs>
+                  <filter id="filter0_d_218_212" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dx="-6" dy="-6"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 1 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_218_212"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_218_212" result="shape"/>
+                  </filter>
+                  </defs>
+              </svg>
+              <p className="point-list-text">
                 On finding the cause of pain, a veterinary physiotherapist will
                 treat it and any secondary symptoms.
               </p>
             </li>
-            <li className="list-item">
-              <p>
+            <li className="point-list-item">
+                <svg className="point-svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_218_212)">
+                  <rect x="6" y="6" width="20" height="20" fill="#AEDDED"/>
+                  </g>
+                  <defs>
+                  <filter id="filter0_d_218_212" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dx="-6" dy="-6"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 1 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_218_212"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_218_212" result="shape"/>
+                  </filter>
+                  </defs>
+              </svg>
+              <p className="point-list-text">
                 A post treatment and remedial exercise plan will be created, to
                 further address all issues and ensure a proper recovery.
               </p>
             </li>
-            <li className="list-item">
-              <p>
+            <li className="point-list-item">
+            <svg className="point-svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_218_212)">
+                  <rect x="6" y="6" width="20" height="20" fill="#AEDDED"/>
+                  </g>
+                  <defs>
+                  <filter id="filter0_d_218_212" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dx="-6" dy="-6"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 0 0.266667 0 0 0 1 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_218_212"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_218_212" result="shape"/>
+                  </filter>
+                  </defs>
+              </svg>
+              <p className="point-list-text">
                 Our objective is to improve an animals health and well-being by
                 reducing pain, limiting injury impact, and improve joint range
                 of motion.
               </p>
             </li>
           </ul>
+          <img
+            alt="A poorly dog in his bed receiving ECT Therapy"
+            src="https://imagestoragemvp.s3.eu-west-2.amazonaws.com/Dog-bed.webp"
+          ></img>
         </section>
 
         <article className="recent-blog-posts">
