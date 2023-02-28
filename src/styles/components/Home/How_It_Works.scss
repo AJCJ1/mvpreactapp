@@ -4,7 +4,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: $SmallMargin 0;
+
+  h2 {
+    font-weight: $FontBold;
+    font-size: $H2FontSize;
+    margin: $SmallMargin;
+  }
 
   img {
     width: 100vw;
