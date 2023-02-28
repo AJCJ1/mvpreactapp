@@ -1,11 +1,9 @@
 // Graphical variables
-@import "./config/Fonts.scss";
-@import "./config/Colors.scss";
+@import "./Config/Fonts.scss";
+@import "./Config/Colors.scss";
 
-// CSS partials
-@import "components/Components";
-
-// Static styling for general elements
+// Components
+@import "./Components/Index.scss";
 
 body {
   background-color: $white;
