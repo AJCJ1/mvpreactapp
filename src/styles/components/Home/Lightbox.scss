@@ -1,0 +1,21 @@
+.lightbox-container {
+
+}
+
+.lightbox {
+  display: flex;
+  gap: 5px;
+  border:1px solid red;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  img {
+    width: 25%;
+    // height: 25vw;
+    object-fit: cover;
+    object-position: center;
+  }
+}
