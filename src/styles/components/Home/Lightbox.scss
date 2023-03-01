@@ -1,20 +1,26 @@
 .lightbox-container {
-
+  h2 {
+    font-size: $H2FontSize;
+    font-weight: $FontBold;
+    text-align: center;
+    margin: $LargeMargin;
+  }
 }
 
 .lightbox {
+  margin: 0 auto;
+  // border:1px solid red;
   display: flex;
-  gap: 5px;
-  border:1px solid red;
-  width: 100vw;
+  width: 87vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 5px;
   img {
-    width: 25%;
-    // height: 25vw;
+    border-radius: 1px;
+    width: 32%;
+    height: 25vw;
     object-fit: cover;
     object-position: center;
   }

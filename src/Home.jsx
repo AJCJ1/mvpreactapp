@@ -227,6 +227,7 @@ const Home = () => {
         </article>
 
         <figure className="lightbox-container">
+          <h2>Happy Customers</h2>
           <div className="lightbox">
             <img
               alt="Dog sat on a sofa"
